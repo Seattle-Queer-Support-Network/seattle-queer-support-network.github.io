@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+   themes: light --default
+}
+:root {
+  --yellow: #d2a121;
+  --teal: #21d2a1ff;
+  --purple:#a121d2;
+  --dark-purple:#331e38;
+  --red:#ed254e;
+
+}
+
+
+@font-face {
+  font-family: OpenDyslexic-Bold; /* set name */
+  src: url(./../public/OpenDyslexic-Bold.otf); /* url of the font */
+}
+
+@font-face {
+  font-family: OpenDyslexic-Regular; /* set name */
+  src: url(./../public/OpenDyslexic-Regular.otf); /* url of the font */
+}
+ .btn-custom {
+  color: white;
+  background-color:var(--purple);
+ }
+ .menu-custom{
+  background: white;
+  
+ }
+.megamenu, .menu, .megamenu a, .megamenu [popovertarget]{
+  font-size: 20px;
+  font-weight: 900;
+   color:var(--dark-purple);
+
+}
+
+#submit{
+  margin-top:10px;
+}
+ .icon{
+  font-size: 30px;
+ }
+
+ h1 {
+  font-family: OpenDyslexic-Bold; /* use font */
+
+}
+
+.group-wrapper {
+  background-color: var(--yellow);
+  border-radius: 10px;
+}
+
+body{
+  color:  var(--dark-purple);
+}
+
+legend{
+  color:var(--dark-purple);
+}
+
+.footer{
+  background-color: var(--dark-purple);
+  width: 100%;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
