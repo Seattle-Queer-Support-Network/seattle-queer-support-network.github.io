@@ -1,5 +1,7 @@
 "use client";
 
+import EventForm from "@/app/ui/EventForm";
+
 export default function Page() {
   return (
     <>
@@ -18,7 +20,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <p className="text-center">this is where the form with go</p>
+      <EventForm />
     </>
   );
 }

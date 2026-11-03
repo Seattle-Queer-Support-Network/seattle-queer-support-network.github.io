@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import pageData from "./ui/websiteData";
 import { Menu } from "./ui/Menu";
-import { FaInstagram, FaFacebook } from "react-icons/fa6";
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: pageData.websiteTitle,
@@ -16,13 +16,12 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div className="hero min-h-screen flex flex-col">
-          <Menu />
-          <div className="main-box">
-            <div className={"hero-content flex-col lg:flex-row"}>
-              <div>{children}</div>
-            </div>
-          </div>
+        <Menu />
+        <div
+          id="root"
+          className=" flex flex-col items-center lg:pl-10 lg:pr-10 pt-10 m-10"
+        >
+          {children}
         </div>
       </body>
       <div className="footer">
@@ -31,17 +30,11 @@ export default function RootLayout({
           className="flex flex-row
 "
         >
-          <a
-            className="icon"
-            href="https://www.instagram.com/belovedsfoundation/"
-          >
+          <a className="icon" href="#">
             <FaInstagram />
           </a>
-          <a
-            className="icon"
-            href="https://www.facebook.com/rachaelbelovedsfoundation"
-          >
-            <FaFacebook />
+          <a className="icon" href="#">
+            <FaTiktok />
           </a>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function Page() {
         <img
           alt={"a photo of an orange cat looking happy"}
           src={"/images/group3.jpg"}
-          className="lg:max-w-sm md:max-w-sm object-contain md:object-cover rounded-lg shadow-2xl"
+          className="lg:max-w-sm md:max-w-sm object-contain md:object-cover  "
         />
         <div>
           <h1 className="text-5xl text-center font-bold">Volunteer</h1>
@@ -29,7 +29,7 @@ export default function Page() {
           </p>
           <p className="text-center m-3">
             <a
-              className="bg-brand box-border border  shadow-xs font-medium text-sm px-4 py-2.5"
+              className="btn btn-custom p-8"
               href="https://www.idealist.org/en/nonprofit/1b630a449bf042898e7781c8b74b682d-beloveds-animal-rescue-relief-foundation-seattle"
             >
               View Current Roles on Volunteer Match

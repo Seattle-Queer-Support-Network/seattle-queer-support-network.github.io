@@ -11,6 +11,10 @@
 
 }
 
+form legend,
+form input{
+  color: black
+}
 
 @font-face {
   font-family: OpenDyslexic-Bold; /* set name */
@@ -25,20 +29,24 @@
   color: white;
   background-color:var(--purple);
  }
- .menu-custom{
-  background: white;
+
+ .menu-custom
+ {
+  background: var(--dark-purple);
+  color: white;
   
  }
-.megamenu, .menu, .megamenu a, .megamenu [popovertarget]{
+.menu-custom .menu li a{
+  color: var(--dark-purple);
+}
+ 
+.megamenu, .menu, .megamenu a, .megamenu,  [popovertarget]{
   font-size: 20px;
   font-weight: 900;
-   color:var(--dark-purple);
-
+   color:white;
 }
 
-#submit{
-  margin-top:10px;
-}
+
  .icon{
   font-size: 30px;
  }
@@ -48,13 +56,24 @@
 
 }
 
-.group-wrapper {
-  background-color: var(--yellow);
-  border-radius: 10px;
+.yellow{
+ background-color:var(--yellow);
+ padding: 20px;
+}
+
+.teal{
+  background-color: var(--purple);
+  padding: 20px;
+}
+.red{
+  background-color: var(--red);
+  padding: 20px;
 }
 
 body{
-  color:  var(--dark-purple);
+ background: var(--dark-purple);
+  font-family: OpenDyslexic-Regular;
+  background-color: white;
 }
 
 legend{

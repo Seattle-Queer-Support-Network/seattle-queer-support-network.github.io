@@ -48,63 +48,54 @@ export default function Form() {
   };
   return (
     <div>
-      <form
-        className="flex flex-col lg:flex-row items-center gap-5 justify-center"
-        onSubmit={onSubmit}
-      >
+      <form onSubmit={onSubmit}>
         <div>
-          <div>
-            <legend className="fieldset-legend  flex flex-col items-center m-1">
-              Name:
-            </legend>
+          <legend className="fieldset-legend  flex flex-col items-center m-1">
+            Name:
+          </legend>
+          <input
+            type="text"
+            className="input w-full"
+            placeholder="Type here"
+            name="name"
+            onChange={handleChange}
+            required
+            maxLength={30}
+          />
+        </div>
+
+        <div>
+          <legend className="fieldset-legend flex flex-col items-center m-1">
+            Email:
+          </legend>
+          <label className="input validator w-full">
             <input
-              type="text"
-              className="input"
-              placeholder="Type here"
-              name="name"
-              onChange={handleChange}
+              type="email"
+              placeholder="mail@site.com"
               required
+              name="email"
+              onChange={handleChange}
               maxLength={30}
             />
-          </div>
+          </label>
+          <div className="validator-hint hidden">Enter valid email address</div>
+        </div>
 
-          <div>
-            <legend className="fieldset-legend flex flex-col items-center m-1">
-              Email:
-            </legend>
-            <label className="input validator">
-              <input
-                type="email"
-                placeholder="mail@site.com"
-                required
-                name="email"
-                onChange={handleChange}
-                maxLength={30}
-              />
-            </label>
-            <div className="validator-hint hidden">
-              Enter valid email address
-            </div>
-          </div>
-
-          <div>
-            <legend className="fieldset-legend flex flex-col items-center m-1">
-              Phone:
-            </legend>
-            <label className="input validator">
-              <input
-                type="phone"
-                placeholder="(xxx)xxxxxx"
-                required
-                name="phone"
-                onChange={handleChange}
-                maxLength={10}
-              />
-            </label>
-            <div className="validator-hint hidden">
-              Enter Vaild Phone Number
-            </div>
-          </div>
+        <div>
+          <legend className="fieldset-legend flex flex-col items-center m-1 ">
+            Phone:
+          </legend>
+          <label className="input validator w-full">
+            <input
+              type="phone"
+              placeholder="(xxx)xxxxxx"
+              required
+              name="phone"
+              onChange={handleChange}
+              maxLength={10}
+            />
+          </label>
+          <div className="validator-hint hidden">Enter Vaild Phone Number</div>
         </div>
 
         <div>
@@ -114,16 +105,17 @@ export default function Form() {
             </legend>
             <textarea
               className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
-              placeholder="Hello Clarissa!"
+              placeholder="Your messesage goes here"
               name="message"
               required
               onChange={handleChange as any}
               maxLength={300}
             ></textarea>
           </div>
-
+        </div>
+        <div className=" mt-5 flex flex-col items-center">
           <button
-            className="btn btn-custom"
+            className="btn btn-custom "
             id="submit"
             type="submit"
             disabled={loading}
