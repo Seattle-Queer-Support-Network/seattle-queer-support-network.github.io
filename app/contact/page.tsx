@@ -4,7 +4,7 @@ import Form from "../ui/Form";
 
 export default function Page() {
   return (
-    <div className={"hero-content flex-col"}>
+    <div className={"hero-content  flex-col  justify-self-center"}>
       <div>
         <h1 className={"text-6xl text-center"}>Contact Us</h1>
         <p className="py-4 text-center lg:max-w-7/10 m-auto ">

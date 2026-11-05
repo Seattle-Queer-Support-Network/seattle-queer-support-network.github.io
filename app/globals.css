@@ -15,7 +15,9 @@ form legend,
 form input{
   color: black
 }
-
+ select{
+  border-color: rgb(207, 207, 207);
+ }
 @font-face {
   font-family: OpenDyslexic-Bold; /* set name */
   src: url(./../public/OpenDyslexic-Bold.otf); /* url of the font */

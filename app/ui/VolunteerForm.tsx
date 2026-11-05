@@ -7,16 +7,15 @@ type FormInfo = {
   email: string;
   message: string;
   phone: string;
-  what: string;
-  why: string;
-  experiance: string;
+  areaOfInterest: "";
+  why: "";
 };
 
 // add the form key here from web3froms
 // don't worry it's public
 const WEB_3_FORM_KEY = "";
 
-export default function VolutneerForm() {
+export default function VolunteerForm() {
   const [answer, setAnswer] = useState({
     name: "",
     email: "",
@@ -51,115 +50,100 @@ export default function VolutneerForm() {
       : redirect("contact/submit?res=0");
   };
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <div>
-          <legend className="fieldset-legend  flex flex-col items-center m-1">
-            Name:
-          </legend>
+    <form onSubmit={onSubmit}>
+      <div>
+        <legend className="fieldset-legend  flex flex-col items-center m-1">
+          Name:
+        </legend>
+        <input
+          type="text"
+          className="input w-full"
+          placeholder="Type here"
+          name="name"
+          onChange={handleChange}
+          required
+          maxLength={30}
+        />
+      </div>
+
+      <div>
+        <legend className="fieldset-legend flex flex-col items-center m-1">
+          Email:
+        </legend>
+        <label className="input validator w-full">
           <input
-            type="text"
-            className="input w-full"
-            placeholder="Type here"
-            name="name"
-            onChange={handleChange}
+            type="email"
+            placeholder="mail@site.com"
             required
+            name="email"
+            onChange={handleChange}
             maxLength={30}
           />
-        </div>
+        </label>
+        <div className="validator-hint hidden">Enter valid email address</div>
+      </div>
 
-        <div>
-          <legend className="fieldset-legend flex flex-col items-center m-1">
-            Email:
+      <div>
+        <legend className="fieldset-legend flex flex-col items-center m-1 ">
+          Phone:
+        </legend>
+        <label className="input validator w-full">
+          <input
+            type="phone"
+            placeholder="(xxx)xxxxxx"
+            required
+            name="phone"
+            onChange={handleChange}
+            maxLength={10}
+          />
+        </label>
+        <div className="validator-hint hidden">Enter Vaild Phone Number</div>
+      </div>
+
+      <div>
+        <div className="flex flex-col center-items mt-5 mb-5">
+          <legend className="fieldset-legend  flex flex-col items-center m-1">
+            Area of Interest
           </legend>
-          <label className="input validator w-full">
-            <input
-              type="email"
-              placeholder="mail@site.com"
-              required
-              name="email"
-              onChange={handleChange}
-              maxLength={30}
-            />
-          </label>
-          <div className="validator-hint hidden">Enter valid email address</div>
+          <select name="areaOfInterest" className="border-2 border-solid p-3">
+            <option value="">Select</option>
+            <option value="outreach">Outreach</option>
+            <option value="website-updates">Website Updates</option>
+            <option value="event-support">Event Support</option>
+            <option value="social-media-drafting">Social Meida Drafting</option>
+            <option value="community-relationship">
+              Community Relationship
+            </option>
+            <option value="calander-update">Calander Updates</option>
+          </select>
         </div>
-
+      </div>
+      <div>
         <div>
-          <legend className="fieldset-legend flex flex-col items-center m-1 ">
-            Phone:
+          <legend className="fieldset-legend  flex flex-col items-center m-1">
+            Why do you want to work with us?
           </legend>
-          <label className="input validator w-full">
-            <input
-              type="phone"
-              placeholder="(xxx)xxxxxx"
-              required
-              name="phone"
-              onChange={handleChange}
-              maxLength={10}
-            />
-          </label>
-          <div className="validator-hint hidden">Enter Vaild Phone Number</div>
+          <textarea
+            className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
+            placeholder="..."
+            name="why"
+            required
+            onChange={handleChange as any}
+            maxLength={300}
+          ></textarea>
         </div>
+      </div>
 
-        <div>
-          <div>
-            <legend>Area of Interest</legend>
-            <select id="cars" name="cars">
-              <option value="outreach">Outreach</option>
-              <option value="website-updates">Website Updates</option>
-              <option value="event-support">Event Support</option>
-              <option value="social-media-drafting">
-                Social Meida Drafting
-              </option>
-              <option value="community-relationship">
-                Community Relationship
-              </option>
-              <option value="calander-update">Calander Updates</option>
-            </select>
-          </div>
-        </div>
-        <div>
-          <div>
-            <legend className="fieldset-legend  flex flex-col items-center m-1">
-              Why do you want to work with us?
-            </legend>
-            <textarea
-              className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
-              placeholder="..."
-              name="why"
-              required
-              onChange={handleChange as any}
-              maxLength={300}
-            ></textarea>
-          </div>
-        </div>
-        <div>
-          <div>
-            <legend className="fieldset-legend  flex flex-col items-center m-1">
-              What is your experiance running groups?
-            </legend>
-            <textarea
-              className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
-              placeholder="..."
-              name="experiance"
-              required
-              onChange={handleChange as any}
-              maxLength={300}
-            ></textarea>
-          </div>
-        </div>
-        <div className=" mt-5 flex flex-col items-center">
-          <button
-            className="btn btn-custom "
-            id="submit"
-            type="submit"
-            disabled={loading}
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+      <div className=" mt-5 flex flex-col items-center">
+        <button
+          className="btn btn-custom "
+          id="submit"
+          type="submit"
+          disabled={loading}
+        >
+          Submit
+        </button>
+      </div>
+    </form>
   );
 }

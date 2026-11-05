@@ -14,7 +14,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className="flex lg:flex-row flex-col items-center">
         <img
@@ -37,7 +37,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className="flex flex-col items-center">
         <div className="m-10">
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className="flex lg:flex-row-reverse flex-col items-center">
         <img
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </div>
 
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className="flex flex-col align-items">
         <div className="m-10">

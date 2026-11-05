@@ -1,19 +1,20 @@
 "use client";
 
 import Form from "@/app/ui/Form";
+import VolunteerForm from "@/app/ui/VolunteerForm";
 
 export default function Page() {
   return (
     <>
       <div
         className={
-          "hero-content flex-col lg:flex-row items-center justify-center justify-items-center "
+          " flex-col lg:flex-row items-center justify-center justify-items-center "
         }
       >
         <img
           alt={"a photo of an orange cat looking happy"}
           src={"/images/group3.jpg"}
-          className="lg:max-w-sm md:max-w-sm object-contain md:object-cover  "
+          className="lg:max-w-sm md:max-w-sm object-contain md:object-cover mb-5 "
         />
         <div>
           <h1 className="text-3xl text-center font-bold">Volunteer</h1>
@@ -37,13 +38,9 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
-      <div
-        className={
-          "hero-content flex-col items-center justify-center justify-items-center "
-        }
-      >
+      <div className={" hero-content  flex-col  justify-self-center"}>
         <h1 className="text-3xl text-center font-bold">Volunteer Form</h1>
 
         <p className="py-4 text-center lg:max-w-9/10 m-auto ">
@@ -56,8 +53,8 @@ export default function Page() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <Form />
-        <hr className="border border-custom m-10" />
+        <VolunteerForm />
+        <hr className="border border-custom m-10 w-full" />
       </div>
     </>
   );

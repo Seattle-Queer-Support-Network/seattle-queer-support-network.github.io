@@ -28,7 +28,7 @@ export default function Page() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className={"flex flex-col lg:flex-row-reverse  items-center "}>
         <img
@@ -51,7 +51,7 @@ export default function Page() {
         </div>
       </div>
 
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className={"flex flex-col lg:flex-row items-center"}>
         <img
@@ -76,7 +76,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10" />
+      <hr className="border border-custom m-10 w-full" />
 
       <div className="">
         <h1 className="text-3xl text-center font-bold m-3">Our Team</h1>

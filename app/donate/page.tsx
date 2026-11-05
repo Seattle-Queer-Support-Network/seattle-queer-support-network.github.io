@@ -24,7 +24,8 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="flex mb-80">
+      <hr className="border border-custom m-10 w-full" />
+      <div className="flex">
         <h1>give butter form will go here once Clare is given accesss</h1>
       </div>
     </>
