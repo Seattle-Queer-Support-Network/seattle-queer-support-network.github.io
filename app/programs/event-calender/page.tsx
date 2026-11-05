@@ -4,11 +4,11 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col align-items pl-10 pr-10">
-        <h1 className="text-5xl text-center font-bold">Event Calander</h1>
+        <h1 className="text-3xl text-center font-bold">Event Calender</h1>
 
-        <hr className="border border-custom m-10 w-full" />
+        <hr className="border border-custom m-10" />
         <p>
-          This is a a place holder for the event calander. Will add one once we
+          This is a a place holder for the event calender. Will add one once we
           have a system to add input.
         </p>
         <img

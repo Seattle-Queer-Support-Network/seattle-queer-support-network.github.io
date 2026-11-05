@@ -16,7 +16,7 @@ export default function Page() {
           className="lg:max-w-sm md:max-w-sm object-contain md:object-cover  "
         />
         <div>
-          <h1 className="text-5xl text-center font-bold">Volunteer</h1>
+          <h1 className="text-3xl text-center font-bold">Volunteer</h1>
 
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -37,14 +37,14 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10" />
 
       <div
         className={
           "hero-content flex-col items-center justify-center justify-items-center "
         }
       >
-        <h1 className="text-5xl text-center font-bold">Volunteer Form</h1>
+        <h1 className="text-3xl text-center font-bold">Volunteer Form</h1>
 
         <p className="py-4 text-center lg:max-w-9/10 m-auto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -57,7 +57,7 @@ export default function Page() {
         </p>
 
         <Form />
-        <hr className="border border-custom m-10 w-full" />
+        <hr className="border border-custom m-10" />
       </div>
     </>
   );

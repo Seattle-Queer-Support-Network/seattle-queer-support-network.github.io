@@ -6,7 +6,6 @@ import React from "react";
 export function Menu() {
   const [showMoblieBar, setShowMoblieBar] = React.useState(false);
   const onClick = () => setShowMoblieBar(!showMoblieBar);
-  console.log(showMoblieBar);
 
   return (
     <div className="max-lg:collapse bg-base-200 w-full rounded-md ">
@@ -19,7 +18,7 @@ export function Menu() {
         <div className="navbar-start">
           <label
             htmlFor="navbar-1-toggle"
-            className="btn btn-ghost lg:hidden"
+            className="btn btn-custom mr-5 min-xl:hidden"
             onClick={onClick}
           >
             <svg
@@ -39,12 +38,12 @@ export function Menu() {
             </svg>
           </label>
           <a href="/">
-            <h1 className="text-5xl">LOGO</h1>
+            <h1 className="text-3xl">LOGO</h1>
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden xl:flex">
           <div
-            className="megamenu max-sm:megamenu-vertical"
+            className="megamenu max-xl:megamenu-vertical"
             id="my-megamenu-1"
             popover={"auto"}
           >
@@ -52,16 +51,19 @@ export function Menu() {
             <MenuItems items={websiteData.pages} />
           </div>
         </div>
-        <div className="navbar-end">
-          <a className="btn m-3 btn-custom" href="/donate">
+        <div className=" max-xl:invisible navbar-end  ">
+          <a className="  btn m-3 btn-custom " href="/donate">
             Donate
           </a>
         </div>
       </div>
       {showMoblieBar ? (
-        <div className="flex justify-center">
-          <div className=" lg:hidden z-1 m-2  text-xl">
+        <div className=" xl:hidden flex justify-center transition-all transition-discrete">
+          <div className=" m-2  text-xl">
             <MoblieMenuItems items={websiteData.pages} />
+            <a className="btn m-3 btn-custom w-50" href="/donate">
+              Donate
+            </a>
           </div>
         </div>
       ) : null}

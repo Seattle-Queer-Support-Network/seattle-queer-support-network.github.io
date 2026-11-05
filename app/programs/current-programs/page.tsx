@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <div>
-        <h1 className="text-5xl text-center font-bold">Current Groups</h1>
+        <h1 className="text-3xl text-center font-bold">Current Groups</h1>
 
         <p className="py-4 text-center lg:max-w-9/10 m-auto ">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -19,7 +19,7 @@ export default function Page() {
         </p>
       </div>
 
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10" />
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
         {groupData.map((group) => {
@@ -51,11 +51,11 @@ export default function Page() {
           );
         })}
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10 " />
       <div className={"hero-content flex-col lg:flex-row"}>
         <div>
-          <h1 className="text-5xl text-center font-bold">
-            Don't See What Your Looking For?
+          <h1 className="text-3xl text-center font-bold">
+            Don't See What You're Looking For?
           </h1>
 
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">

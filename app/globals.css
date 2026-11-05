@@ -30,7 +30,11 @@ form input{
   background-color:var(--purple);
  }
 
- .menu-custom
+ .purple-select:active{
+  color: var(--purple);
+ }
+ .menu-custom,
+ .navbar-end
  {
   background: var(--dark-purple);
   color: white;
@@ -54,7 +58,8 @@ form input{
  h1 {
   font-family: OpenDyslexic-Bold; /* use font */
 
-}
+  line-height:1.2;
+ }
 
 .yellow{
  background-color:var(--yellow);

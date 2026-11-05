@@ -106,7 +106,7 @@ export default function GroupLeadForm() {
         <div>
           <div>
             <legend className="fieldset-legend  flex flex-col items-center m-1">
-              What type of group you wish to start?
+              What type of group do you wish to start?
             </legend>
             <textarea
               className="textarea h-50 w-full lg:min-w-100 md:min-w-100"

@@ -45,7 +45,7 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
 
     {
       title: "Programs",
-      subTitles:[{title: "Event Calander", path:"/programs/event-calander"}, {title: "Current Groups", path:"/programs/current-programs"}]
+      subTitles:[{title: "Event Calender", path:"/programs/event-calender"}, {title: "Current Groups", path:"/programs/current-programs"}]
     },
         {
       title: "Get Involved",

@@ -11,7 +11,7 @@ export default function Page() {
         />
 
         <div>
-          <h1 className="text-5xl text-center font-bold">Donate</h1>
+          <h1 className="text-3xl text-center font-bold">Donate</h1>
 
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

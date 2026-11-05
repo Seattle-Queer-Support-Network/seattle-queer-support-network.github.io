@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <>
       <div className="flex p-10 lg:flex-row flex-col md:items-center bg-[url('./../public/images/pride-flag.jpg')] bg-center bg-cover">
-        <div className="m-10 mt-20 bg-white/75  p-5 ">
-          <h1 className="text-5xl text-center font-bold">Cool Motto Here</h1>
+        <div className="sm:m-10  mt-20 bg-white/75  p-5 ">
+          <h1 className="text-3xl text-center font-bold">Cool Motto Here</h1>
           <p className="py-4 text-center lg:max-w-9/10 m-auto  ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -14,7 +14,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10" />
 
       <div className="flex lg:flex-row flex-col items-center">
         <img
@@ -23,7 +23,7 @@ export default function Home() {
           className="lg:max-w-sm md:max-w-sm object-contain md:object-cover   m-5 h-75"
         />
         <div className="m-10">
-          <h1 className="text-5xl text-center font-bold">
+          <h1 className="text-3xl text-center font-bold">
             We're Seattle Queer Support Network
           </h1>
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
@@ -37,13 +37,13 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10" />
 
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         <div className="m-10">
-          <h1 className="text-5xl text-center font-bold ">Engage With Us!</h1>
+          <h1 className="text-3xl text-center font-bold ">Engage With Us!</h1>
         </div>
-        <div className="flex lg:flex-row flex-col gap-10">
+        <div className="flex flex-row max-xl:flex-col gap-10">
           <div className="flex flex-col items-center">
             <img
               alt={"a photo of an orange cat looking happy"}
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10" />
 
       <div className="flex lg:flex-row-reverse flex-col items-center">
         <img
@@ -91,7 +91,7 @@ export default function Home() {
           className="lg:max-w-sm md:max-w-sm object-contain md:object-cover    m-5 h-75"
         />
         <div className="m-10">
-          <h1 className="text-5xl text-center font-bold">Want to hear more?</h1>
+          <h1 className="text-3xl text-center font-bold">Want to hear more?</h1>
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -112,11 +112,11 @@ export default function Home() {
         </div>
       </div>
 
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom m-10" />
 
       <div className="flex flex-col align-items">
         <div className="m-10">
-          <h1 className="text-5xl text-center font-bold">
+          <h1 className="text-3xl text-center font-bold">
             Subscribe to our newsletter!
           </h1>
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
