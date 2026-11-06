@@ -9,11 +9,6 @@ export function Menu() {
 
   return (
     <div className="max-lg:collapse bg-base-200 w-full rounded-md ">
-      <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
-      <label
-        htmlFor="navbar-1-toggle"
-        className="fixed inset-0 hidden max-lg:peer-checked:block"
-      ></label>
       <div className="collapse-title navbar menu-custom">
         <div className="navbar-start">
           <label
@@ -58,7 +53,7 @@ export function Menu() {
         </div>
       </div>
       {showMoblieBar ? (
-        <div className=" xl:hidden flex justify-center transition-all transition-discrete">
+        <div className=" xl:hidden ">
           <div className=" m-2  text-xl">
             <MoblieMenuItems items={websiteData.pages} />
             <a className="btn m-3 btn-custom w-50" href="/donate">
