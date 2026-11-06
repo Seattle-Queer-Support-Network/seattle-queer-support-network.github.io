@@ -110,11 +110,11 @@ export default function VolunteerForm() {
             <option value="outreach">Outreach</option>
             <option value="website-updates">Website Updates</option>
             <option value="event-support">Event Support</option>
-            <option value="social-media-drafting">Social Meida Drafting</option>
+            <option value="social-media-drafting">Social Media Drafting</option>
             <option value="community-relationship">
               Community Relationship
             </option>
-            <option value="calander-update">Calander Updates</option>
+            <option value="calender-update">Calender Updates</option>
           </select>
         </div>
       </div>
