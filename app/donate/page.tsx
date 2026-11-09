@@ -5,13 +5,14 @@ export default function Page() {
     <>
       <div className={"flex lg:flex-row flex-col items-center  "}>
         <img
-          alt={"a photo of an orange cat looking happy"}
+          alt="alt text goes here"
+          title="alt text goes here"
           src={"/images/couple2.jpg"}
           className="lg:max-w-sm md:max-w-sm object-contain md:object-cover m-3  "
         />
 
         <div>
-          <h1 className="text-3xl text-center font-bold">Donate</h1>
+          <h1 className="text-5xl text-center font-bold">Donate</h1>
 
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

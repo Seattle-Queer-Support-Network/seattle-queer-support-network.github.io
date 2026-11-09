@@ -12,12 +12,13 @@ export default function Page() {
         }
       >
         <img
-          alt={"a photo of an orange cat looking happy"}
+          alt="alt text goes here"
+          title="alt text goes here"
           src={"/images/group3.jpg"}
           className="lg:max-w-sm md:max-w-sm object-contain md:object-cover mb-5 "
         />
         <div>
-          <h1 className="text-3xl text-center font-bold">Volunteer</h1>
+          <h1 className="text-5xl text-center font-bold">Volunteer</h1>
 
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,20 +29,24 @@ export default function Page() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <p className="text-center m-3">
+
+          {
+            // Commenting out Volunteer Match until it's ready
+            /* <p className="text-center m-3">
             <a
               className="btn btn-custom p-8"
               href="https://www.idealist.org/en/nonprofit/1b630a449bf042898e7781c8b74b682d-beloveds-animal-rescue-relief-foundation-seattle"
             >
               View Current Roles on Volunteer Match
             </a>
-          </p>
+          </p> */
+          }
         </div>
       </div>
       <hr className="border border-custom m-10 w-full" />
 
       <div className={" hero-content  flex-col  justify-self-center"}>
-        <h1 className="text-3xl text-center font-bold">Volunteer Form</h1>
+        <h1 className="text-5xl text-center font-bold">Volunteer Form</h1>
 
         <p className="py-4 text-center lg:max-w-9/10 m-auto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <div>
-        <h1 className="text-3xl text-center font-bold">Current Groups</h1>
+        <h1 className="text-5xl text-center font-bold">Current Groups</h1>
 
         <p className="py-4 text-center lg:max-w-9/10 m-auto ">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -33,11 +33,12 @@ export default function Page() {
 "
               >
                 <img
-                  alt={"a photo of an orange cat looking happy"}
+                  alt="alt text goes here"
+                  title="alt text goes here"
                   src={group.icon}
                   className=" object-contain h-20  m-5 "
                 />
-                <h1 className="text-3xl ">{group.title}</h1>
+                <h1 className="text-5xl ">{group.title}</h1>
                 <p>{group.description}</p>
                 <p className="font-medium ">
                   {group.time} in {group.location}
@@ -54,7 +55,7 @@ export default function Page() {
       <hr className="border border-custom m-10 w-full" />
       <div className={"hero-content flex-col lg:flex-row"}>
         <div>
-          <h1 className="text-3xl text-center font-bold">
+          <h1 className="text-5xl text-center font-bold">
             Don't See What You're Looking For?
           </h1>
 

@@ -16,9 +16,8 @@ export type groupData={
   contact: string
 }
 
-export type staffData={
+export type adminData={
   name: string;
-  title: string;
   image:string;
 }
 
@@ -30,7 +29,7 @@ export type PageData ={
    
 }
 
-const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[], staffData:staffData[]}= {
+const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[], adminData:adminData[]}= {
   pages: [
     {
       title: "Home",
@@ -111,7 +110,7 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
     
   ],
 
-  staffData :[{name: "First Last", title:"Volunteer Coordinator", image:"/images/example-staff-photo.jpg"},{name: "First Last", title:"Volunteer Coordinator",image:"/images/example-staff-photo.jpg"},{name: "First Last", title:"Volunteer Coordinator",image:"/images/example-staff-photo.jpg"},{name: "First Last", title:"Volunteer Coordinator",image:"/images/example-staff-photo.jpg"},{name: "First Last", title:"Volunteer Coordinator",image:"/images/example-staff-photo.jpg"},{name: "First Last", title:"Volunteer Coordinator",image:"/images/example-staff-photo.jpg"}],
+  adminData :[{name: "Name",  image:"/images/example-staff-photo.jpg"},{name: "Name",image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"}],
   websiteTitle: "Seattle Queer Support Network",
 };
 

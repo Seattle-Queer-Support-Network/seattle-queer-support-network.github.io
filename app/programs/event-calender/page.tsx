@@ -3,7 +3,7 @@
 export default function Page() {
   return (
     <>
-      <h1 className="text-3xl text-center font-bold">Event Calender</h1>
+      <h1 className="text-5xl text-center font-bold">Event Calender</h1>
 
       <hr className="border border-custom m-10 w-full" />
       <p>
@@ -11,7 +11,8 @@ export default function Page() {
         have a system to add input.
       </p>
       <img
-        alt={"a photo of an orange cat looking happy"}
+        alt="alt text goes here"
+        title="alt text goes here"
         src={"/images/calander-temp.jpg"}
         className="   "
       />
