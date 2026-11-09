@@ -6,11 +6,7 @@ import VolunteerForm from "@/app/ui/VolunteerForm";
 export default function Page() {
   return (
     <>
-      <div
-        className={
-          " flex-col lg:flex-row items-center justify-center justify-items-center "
-        }
-      >
+      <div className={"flex lg:flex-row-reverse flex-col items-center  "}>
         <img
           alt="alt text goes here"
           title="alt text goes here"

@@ -33,7 +33,7 @@ export function Menu() {
             </svg>
           </label>
           <a href="/">
-            <h1 className="text-5xl">LOGO</h1>
+            <h1 className="text-5xl">SQSN</h1>
           </a>
         </div>
         <div className="navbar-center hidden xl:flex">

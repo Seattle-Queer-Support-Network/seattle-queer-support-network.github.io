@@ -17,14 +17,17 @@ export default function RootLayout({
     <html>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <body className="min-w-sm max-w-xlg">
+      <body className="min-w-sm max-w-xlg ">
         <Menu />
-        <div
-          id="root"
-          className=" hero-content flex-col  justify-start
- justify-self-center min-h-screen lg:pl-10 lg:pr-10 pt-10 m-10"
-        >
-          {children}
+        <div className="grid">
+          <div
+            id="root"
+            className="hero-content flex-col justify-start
+ justify-self-center
+  min-h-screen lg:pl-10 lg:pr-10 pt-10 m-10"
+          >
+            {children}
+          </div>
         </div>
       </body>
       <div className="footer">
