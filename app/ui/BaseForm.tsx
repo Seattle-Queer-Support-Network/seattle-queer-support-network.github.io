@@ -5,10 +5,18 @@ export const EVENT_ACCESS_KEY = "";
 export const GROUP_LEAD_ACCESS_KEY = "";
 export const VOLUNTEER_ACCESS_KEY = "";
 
-export default function BaseForm({ access_key, children, formName }) {
+export default function BaseForm({
+  access_key,
+  children,
+  formName,
+}: {
+  children: React.ReactNode;
+  formName: string;
+  access_key: string;
+}) {
   const [result, setResult] = useState("");
   console.log(access_key);
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: any) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
