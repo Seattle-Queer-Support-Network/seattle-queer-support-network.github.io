@@ -1,8 +1,8 @@
-import BaseForm, { CONTACT_ACCESS_KEY } from "./BaseForm";
+import BaseForm, { VOLUNTEER_ACCESS_KEY } from "./BaseForm";
 
 export default function VolunteerForm() {
   return (
-    <BaseForm access_key={CONTACT_ACCESS_KEY} formName={"Volunteer Form"}>
+    <BaseForm access_key={VOLUNTEER_ACCESS_KEY} formName={"Volunteer Form"}>
       <div>
         <div className="flex flex-col center-items mt-5 mb-5">
           <legend className="fieldset-legend  flex flex-col items-center m-1">

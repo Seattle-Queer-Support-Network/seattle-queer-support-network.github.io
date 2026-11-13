@@ -2,8 +2,7 @@ import BaseForm, { CONTACT_ACCESS_KEY } from "./BaseForm";
 
 export default function ContactForm() {
   return (
-    <BaseForm access_key={CONTACT_ACCESS_KEY}>
-      <input type="hidden" name="formType" value="Contact Form" />
+    <BaseForm access_key={CONTACT_ACCESS_KEY} formName={"Contact Form"}>
       <div>
         <div>
           <legend className="fieldset-legend  flex flex-col items-center m-1">

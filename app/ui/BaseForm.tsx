@@ -41,7 +41,6 @@ export default function BaseForm({
       {result ? null : (
         <>
           <input type="hidden" name="formType" value={formName} />
-
           <div>
             <legend className="fieldset-legend  flex flex-col items-center m-1">
               Name:
