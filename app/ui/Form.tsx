@@ -11,7 +11,7 @@ type FormInfo = {
 
 // add the form key here from web3froms
 // don't worry it's public
-const WEB_3_FORM_KEY = "";
+const WEB_3_FORM_KEY = "3a4bdd6c-2be7-4580-b1ee-561d88e39121";
 
 export default function Form() {
   const [answer, setAnswer] = useState({
@@ -42,9 +42,7 @@ export default function Form() {
       body: formData,
     });
     const data = await response.json();
-    data.success
-      ? redirect(`contact/submit?res=1`)
-      : redirect("contact/submit?res=0");
+    data.success ? redirect(`/submit?res=1`) : redirect("/submit?res=0");
   };
   return (
     <div>
@@ -89,8 +87,9 @@ export default function Form() {
             <input
               type="phone"
               placeholder="(xxx)xxxxxx"
-              required
               name="phone"
+              // only matches on US numbers (sorry international friends)
+              pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
               onChange={handleChange}
               maxLength={10}
             />
