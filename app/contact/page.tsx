@@ -1,6 +1,6 @@
 "use client";
 
-import Form from "../ui/Form";
+import Form from "../ui/ContactForm";
 
 export default function Page() {
   return (

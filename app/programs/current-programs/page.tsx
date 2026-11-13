@@ -1,7 +1,8 @@
 "use client";
 
-import Form from "@/app/ui/Form";
+import Form from "@/app/ui/ContactForm";
 import websiteData from "../../ui/websiteData";
+import ContactForm from "@/app/ui/ContactForm";
 
 export default function Page() {
   const groupData = websiteData.groupData;
@@ -66,7 +67,9 @@ export default function Page() {
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.
           </p>
-          <Form />
+          <div className={"hero-content  flex-col  justify-self-center"}>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </>

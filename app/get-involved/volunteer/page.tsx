@@ -1,6 +1,6 @@
 "use client";
 
-import Form from "@/app/ui/Form";
+import Form from "@/app/ui/ContactForm";
 import VolunteerForm from "@/app/ui/VolunteerForm";
 
 export default function Page() {

@@ -32,6 +32,7 @@ form input{
   background-color:var(--purple);
  }
 
+
  .purple-select:active{
   color: var(--purple);
  }
