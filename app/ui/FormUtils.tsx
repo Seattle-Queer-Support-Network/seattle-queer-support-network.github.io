@@ -1,11 +1,51 @@
 import { useState } from "react";
+import { FaCheckCircle } from "react-icons/fa";
+import { RiMailSendLine } from "react-icons/ri";
+import { MdError } from "react-icons/md";
 
 export const CONTACT_ACCESS_KEY = "3a4bdd6c-2be7-4580-b1ee-561d88e39121";
-export const EVENT_ACCESS_KEY = "";
-export const GROUP_LEAD_ACCESS_KEY = "";
-export const VOLUNTEER_ACCESS_KEY = "";
+export const EVENT_ACCESS_KEY = "3e18a8e4-fab5-47b7-b948-a5b0d016617f";
+export const GROUP_LEAD_ACCESS_KEY = "bd7d7d67-c445-487c-9c89-2620ac950102";
+export const VOLUNTEER_ACCESS_KEY = "6157c09a-933d-423b-9691-cdb629920ed3";
+export const GROUP_SUGGESTION_ACCESS_KEY =
+  "7744d445-d178-4a68-b002-661a831f4526";
 
-export default function BaseForm({
+const SUCCESSFUL_RESPONSE_MESSAGE =
+  "Message successfuly sent! We'll get back to you as soon as possible.";
+
+const ERROR_RESPONSE_MESSAGE =
+  "Message failed to send. Please try again later.";
+
+const SENDING_MESSAGE = "Sending...";
+
+enum formStatus {
+  unsent, //0
+  sending, //1
+  error, //2
+  success, //3
+}
+
+const formResponses: {
+  [key: (typeof formStatus)[number]]: {
+    icon: React.ReactNode;
+    message: string;
+  };
+} = {
+  3: {
+    icon: <FaCheckCircle size={70} className="fill-green-500 mb-5" />,
+    message: SUCCESSFUL_RESPONSE_MESSAGE,
+  },
+  2: {
+    icon: <MdError size={70} className="fill-red-500 mb-5" />,
+    message: ERROR_RESPONSE_MESSAGE,
+  },
+  1: {
+    icon: <RiMailSendLine size={70} className=" mb-5" />,
+    message: SENDING_MESSAGE,
+  },
+};
+
+export function BaseForm({
   access_key,
   children,
   formName,
@@ -14,11 +54,11 @@ export default function BaseForm({
   formName: string;
   access_key: string;
 }) {
-  const [result, setResult] = useState("");
+  const [formResult, setFormResult] = useState(formStatus.unsent);
   console.log(access_key);
   const onSubmit = async (event: any) => {
     event.preventDefault();
-    setResult("Sending....");
+    setFormResult(formStatus.unsent);
     const formData = new FormData(event.target);
     formData.append("access_key", access_key);
 
@@ -29,17 +69,18 @@ export default function BaseForm({
 
     const data = await response.json();
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setFormResult(formStatus.success);
       event.target.reset();
     } else {
-      setResult("Error");
+      setFormResult(formStatus.error);
     }
   };
 
+  console.log(formResult);
   return (
-    <form onSubmit={onSubmit}>
-      {result ? null : (
-        <>
+    <>
+      {formResult == formStatus.unsent ? (
+        <form onSubmit={onSubmit}>
           <input type="hidden" name="formType" value={formName} />
           <div>
             <legend className="fieldset-legend  flex flex-col items-center m-1">
@@ -48,7 +89,6 @@ export default function BaseForm({
             <input
               type="text"
               className="input w-full"
-              placeholder="Type here"
               name="name"
               required
               maxLength={30}
@@ -78,10 +118,11 @@ export default function BaseForm({
             <label className="input validator w-full">
               <input
                 type="phone"
-                placeholder="(xxx)xxxxxx"
-                required
+                placeholder="(000) 000-0000"
                 name="phone"
-                maxLength={10}
+                maxLength={14}
+                // only supports US numbers
+                pattern="\(?\d{3}\)?-? *\d{3}-? *-?\d{4}"
               />
             </label>
             <div className="validator-hint hidden">
@@ -95,9 +136,13 @@ export default function BaseForm({
               Submit
             </button>
           </div>
-        </>
+        </form>
+      ) : (
+        <p className="flex flex-col text-center  items-center">
+          {formResponses[formResult].icon}
+          {formResponses[formResult].message}
+        </p>
       )}
-      <span>{result}</span>
-    </form>
+    </>
   );
 }

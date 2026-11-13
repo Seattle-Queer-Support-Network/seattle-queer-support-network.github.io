@@ -1,4 +1,4 @@
-import BaseForm, { VOLUNTEER_ACCESS_KEY } from "./BaseForm";
+import { VOLUNTEER_ACCESS_KEY, BaseForm } from "./FormUtils";
 
 export default function VolunteerForm() {
   return (
@@ -18,6 +18,7 @@ export default function VolunteerForm() {
               Community Relationship
             </option>
             <option value="calender-update">Calender Updates</option>
+            <option value="other">Other (describe below)</option>
           </select>
         </div>
       </div>

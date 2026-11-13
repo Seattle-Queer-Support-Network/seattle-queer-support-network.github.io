@@ -1,4 +1,4 @@
-import BaseForm, { CONTACT_ACCESS_KEY } from "./BaseForm";
+import { CONTACT_ACCESS_KEY, BaseForm } from "./FormUtils";
 
 export default function ContactForm() {
   return (
@@ -6,12 +6,12 @@ export default function ContactForm() {
       <div>
         <div>
           <legend className="fieldset-legend  flex flex-col items-center m-1">
-            Contact Form
+            Message:
           </legend>
           <textarea
             className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
             placeholder="..."
-            name="experiance"
+            name="message"
             required
             maxLength={300}
           ></textarea>

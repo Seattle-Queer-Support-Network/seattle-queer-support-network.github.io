@@ -1,4 +1,4 @@
-import BaseForm, { EVENT_ACCESS_KEY } from "./BaseForm";
+import { EVENT_ACCESS_KEY, BaseForm } from "./FormUtils";
 
 export default function EventForm() {
   return (
@@ -12,16 +12,16 @@ export default function EventForm() {
           <input
             className="p-2"
             type="time"
-            id="appointment"
-            name="appointment"
+            id="startTime"
+            name="startTime"
             required
           />
           <p className="p-2">End Time</p>
           <input
             className="p-2"
             type="time"
-            id="appointment"
-            name="appointment"
+            id="endTime"
+            name="endTime"
             required
           />
         </div>

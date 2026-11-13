@@ -1,4 +1,4 @@
-import BaseForm, { GROUP_LEAD_ACCESS_KEY } from "./BaseForm";
+import { GROUP_LEAD_ACCESS_KEY, BaseForm } from "./FormUtils";
 
 export default function GroupLeadForm() {
   return (
