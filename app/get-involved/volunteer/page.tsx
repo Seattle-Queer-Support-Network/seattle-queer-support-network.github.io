@@ -55,7 +55,6 @@ export default function Page() {
         </p>
 
         <VolunteerForm />
-        <hr className="border border-custom m-10 w-full" />
       </div>
     </>
   );

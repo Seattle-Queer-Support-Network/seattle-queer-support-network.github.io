@@ -1,12 +1,9 @@
 "use client";
-
-import Form from "@/app/ui/ContactForm";
 import websiteData from "../../ui/websiteData";
 import ContactForm from "@/app/ui/ContactForm";
 
 export default function Page() {
   const groupData = websiteData.groupData;
-  console.log(groupData);
   return (
     <>
       <div>
@@ -23,16 +20,14 @@ export default function Page() {
       <hr className="border border-custom m-10 w-full" />
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
-        {groupData.map((group) => {
+        {groupData.map((group, index) => {
           return (
             <div
-              className="hero-content flex-col rounded-lg
- teal"
+              className="hero-content flex-col rounded-lg teal"
+              // adding index to avoid collisions
+              key={group.title + index}
             >
-              <div
-                className="flex flex-col text-center gap-3 bg-white p-5 rounded-lg
-"
-              >
+              <div className="flex flex-col text-center gap-3 bg-white p-5 rounded-lg">
                 <img
                   alt="alt text goes here"
                   title="alt text goes here"

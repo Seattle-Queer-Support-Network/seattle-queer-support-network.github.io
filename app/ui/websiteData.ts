@@ -69,7 +69,7 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
   time: "2:00pm - 4:00pm, every 3rd Thursday of the month",
   location: "Ballard",
   contact: "steve@steve.com",
-  icon: '/images/depression.png'
+  icon: '/images/groupIcons/depression.png'
 },
    {title:"Group Title",
       description: "Group description goes here. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Group description goes here. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.",
@@ -87,7 +87,7 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
   time: "2:00pm - 4:00pm, every 3rd Thursday of the month",
   location: "Ballard",
   contact: "steve@steve.com",
-    icon: '/images/trans.png'
+    icon: '/images/groupIcons/trans.png'
 },
    {title:"Group Title",
       description: "Group description goes here. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Group description goes here. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.",
@@ -105,7 +105,7 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
   time: "2:00pm - 4:00pm, every 3rd Thursday of the month",
   location: "Ballard",
   contact: "steve@steve.com",
-    icon: '/images/wlw.png'
+    icon: '/images/groupIcons/wlw.png'
 }
     
   ],

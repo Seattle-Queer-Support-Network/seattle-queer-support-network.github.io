@@ -84,9 +84,13 @@ export default function Page() {
         <h1 className="text-5xl text-center font-bold m-3">Admins</h1>
 
         <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-4 flex flex-col items-center">
-          {adminData.map((admin) => {
+          {adminData.map((admin, index) => {
             return (
-              <div className="bg-white rounded-lg p-5 flex flex-col items-center ">
+              <div
+                // add index incase anyone has the same name
+                key={admin.name + index}
+                className="bg-white rounded-lg p-5 flex flex-col items-center "
+              >
                 <img
                   alt="alt text goes here"
                   title="alt text goes here"

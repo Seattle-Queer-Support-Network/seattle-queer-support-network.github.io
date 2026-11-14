@@ -1,3 +1,4 @@
+import React from "react";
 import { PageData } from "./websiteData";
 
 export function MenuItems(props: { items: PageData[] }) {
@@ -15,7 +16,9 @@ export function MenuItems(props: { items: PageData[] }) {
                   {item.subTitles.map((sub) => {
                     return (
                       <li key={sub.title}>
-                        <a href={sub.path}>{sub.title}</a>
+                        <a className="dropdown-menu-item" href={sub.path}>
+                          {sub.title}
+                        </a>
                       </li>
                     );
                   })}
@@ -25,7 +28,7 @@ export function MenuItems(props: { items: PageData[] }) {
           );
         } else {
           return (
-            <>
+            <React.Fragment key={item.title}>
               <button
                 id={item.title}
                 className="after:content-none"
@@ -35,7 +38,7 @@ export function MenuItems(props: { items: PageData[] }) {
                 <a href={item.path}>{item.title}</a>
               </button>
               <div popover={"auto"}></div>
-            </>
+            </React.Fragment>
           );
         }
       })}

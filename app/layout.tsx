@@ -29,21 +29,21 @@ export default function RootLayout({
             {children}
           </div>
         </div>
-      </body>
-      <div className="footer">
-        <p> Website by Clare Mason</p>
-        <div
-          className="  flex flex-row
+        <div className="footer">
+          <p> Website by Clare Mason</p>
+          <div
+            className="  flex flex-row
 "
-        >
-          <a className="icon" href="#">
-            <FaInstagram />
-          </a>
-          <a className="icon" href="#">
-            <FaTiktok />
-          </a>
+          >
+            <a className="icon" href="#">
+              <FaInstagram />
+            </a>
+            <a className="icon" href="#">
+              <FaTiktok />
+            </a>
+          </div>
         </div>
-      </div>
+      </body>
     </html>
   );
 }

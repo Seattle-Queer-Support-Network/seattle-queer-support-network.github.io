@@ -55,7 +55,6 @@ export function BaseForm({
   access_key: string;
 }) {
   const [formResult, setFormResult] = useState(formStatus.unsent);
-  console.log(access_key);
   const onSubmit = async (event: any) => {
     event.preventDefault();
     setFormResult(formStatus.unsent);
@@ -76,7 +75,6 @@ export function BaseForm({
     }
   };
 
-  console.log(formResult);
   return (
     <>
       {formResult == formStatus.unsent ? (
