@@ -1,6 +1,6 @@
 "use client";
+import GroupSuggestionForm from "@/app/ui/GroupSuggestionForm";
 import websiteData from "../../ui/websiteData";
-import ContactForm from "@/app/ui/ContactForm";
 
 export default function Page() {
   const groupData = websiteData.groupData;
@@ -63,7 +63,7 @@ export default function Page() {
             anim id est laborum.
           </p>
           <div className={"hero-content  flex-col  justify-self-center"}>
-            <ContactForm />
+            <GroupSuggestionForm />
           </div>
         </div>
       </div>
