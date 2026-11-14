@@ -34,12 +34,12 @@ export default function GroupLeadForm() {
       <div>
         <div>
           <legend className="fieldset-legend  flex flex-col items-center m-1">
-            What is your experiance running groups?
+            What is your experience running groups?
           </legend>
           <textarea
             className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
             placeholder="..."
-            name="experiance"
+            name="experience"
             required
             maxLength={300}
           ></textarea>
