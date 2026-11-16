@@ -7,18 +7,16 @@ export default function GroupSuggestionForm() {
       formName={"Group Suggestion Form"}
     >
       <div>
-        <div>
-          <legend className="fieldset-legend  flex flex-col items-center m-1">
-            Tell about what kind of group you are looking for:
-          </legend>
-          <textarea
-            className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
-            placeholder="..."
-            name="groupSuggestion"
-            required
-            maxLength={300}
-          ></textarea>
-        </div>
+        <legend className="fieldset-legend  flex flex-col items-center m-1">
+          What kind of group are you looking for? *
+        </legend>
+        <textarea
+          className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
+          placeholder="..."
+          name="groupSuggestion"
+          required
+          maxLength={300}
+        ></textarea>
       </div>
     </BaseForm>
   );

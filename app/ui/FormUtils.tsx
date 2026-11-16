@@ -81,8 +81,8 @@ export function BaseForm({
         <form onSubmit={onSubmit}>
           <input type="hidden" name="formType" value={formName} />
           <div>
-            <legend className="fieldset-legend  flex flex-col items-center m-1">
-              Name:
+            <legend className="fieldset-legend  required flex flex-col items-center m-1">
+              Name *
             </legend>
             <input
               type="text"
@@ -94,7 +94,7 @@ export function BaseForm({
           </div>
           <div>
             <legend className="fieldset-legend flex flex-col items-center m-1">
-              Email:
+              Email *
             </legend>
             <label className="input validator w-full">
               <input
@@ -111,7 +111,7 @@ export function BaseForm({
           </div>
           <div>
             <legend className="fieldset-legend flex flex-col items-center m-1 ">
-              Phone:
+              Phone
             </legend>
             <label className="input validator w-full">
               <input
