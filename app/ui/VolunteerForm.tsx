@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { VOLUNTEER_ACCESS_KEY, BaseForm } from "./FormUtils";
 
 export default function VolunteerForm() {
+  const [other, setOther] = useState(false);
+
   return (
     <BaseForm access_key={VOLUNTEER_ACCESS_KEY} formName={"Volunteer Form"}>
       <div>
@@ -8,7 +11,17 @@ export default function VolunteerForm() {
           <legend className="fieldset-legend  flex flex-col items-center m-1">
             Area of Interest
           </legend>
-          <select name="areaOfInterest" className="border-2 border-solid p-3">
+          <select
+            name="areaOfInterest"
+            className="border-2 border-solid p-3"
+            onChange={(e) => {
+              if (e.target.value == "other") {
+                setOther(true);
+              } else {
+                setOther(false);
+              }
+            }}
+          >
             <option value="">Select</option>
             <option value="outreach">Outreach</option>
             <option value="website-updates">Website Updates</option>
@@ -22,6 +35,22 @@ export default function VolunteerForm() {
           </select>
         </div>
       </div>
+      {other ? (
+        <div>
+          <div>
+            <legend className="fieldset-legend  flex flex-col items-center m-1">
+              Describe your area of interest
+            </legend>
+            <textarea
+              className="textarea h-50 w-full lg:min-w-100 md:min-w-100"
+              placeholder="..."
+              name="otherAreaOfInterestDescription"
+              required
+              maxLength={300}
+            ></textarea>
+          </div>
+        </div>
+      ) : null}
       <div>
         <div>
           <legend className="fieldset-legend  flex flex-col items-center m-1">
