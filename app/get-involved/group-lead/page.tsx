@@ -1,5 +1,10 @@
-"use client";
 import GroupLeadForm from "@/app/ui/GroupLeadForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign Up to be a Seattle Queer Support Network Group Lead",
+  description: "",
+};
 
 export default function Page() {
   return (

@@ -1,6 +1,11 @@
-"use client";
 import GroupSuggestionForm from "../../ui/GroupSuggestionForm";
 import websiteData from "../../ui/websiteData";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Browse the current programs at Seattle Queer Support Network",
+  description: "",
+};
 
 export default function Page() {
   const groupData = websiteData.groupData;

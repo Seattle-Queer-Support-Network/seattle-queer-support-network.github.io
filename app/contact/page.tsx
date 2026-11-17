@@ -1,5 +1,10 @@
-"use client";
-import Form from "../ui/ContactForm";
+import ContactForm from "../ui/ContactForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Seattle Queer Support Network Contact Page",
+  description: "",
+};
 
 export default function Page() {
   return (
@@ -11,7 +16,7 @@ export default function Page() {
           we’ll get back to you as soon as we can.
         </p>
       </div>
-      <Form />
+      <ContactForm />
     </div>
   );
 }

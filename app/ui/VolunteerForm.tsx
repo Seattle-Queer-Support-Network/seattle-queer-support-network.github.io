@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { VOLUNTEER_ACCESS_KEY, BaseForm } from "./FormUtils";
 

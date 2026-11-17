@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Donate to Seattle Queer Support Network",
+  description: "",
+};
+
 export default function Page() {
   return (
     <>

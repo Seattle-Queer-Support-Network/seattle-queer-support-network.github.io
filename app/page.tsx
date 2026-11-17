@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Seattle Queer Support Network Homepage",
+  description: "",
+};
+
 export default function Home() {
   return (
     <>

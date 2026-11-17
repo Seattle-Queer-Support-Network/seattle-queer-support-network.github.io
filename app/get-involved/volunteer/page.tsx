@@ -1,5 +1,10 @@
-"use client";
 import VolunteerForm from "../../ui/VolunteerForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Signup to volunteer with Seattle Queer Support Network",
+  description: "",
+};
 
 export default function Page() {
   return (

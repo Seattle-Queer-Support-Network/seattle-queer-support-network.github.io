@@ -1,5 +1,10 @@
-"use client";
 import EventForm from "../../ui/EventForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Submit an Event to the Seattle Queer Support Network Calander",
+  description: "",
+};
 
 export default function Page() {
   return (

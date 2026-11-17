@@ -1,12 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import pageData from "./ui/websiteData";
 import { Menu } from "./ui/Menu";
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
-
-export const metadata: Metadata = {
-  title: pageData.websiteTitle,
-};
 
 export default function RootLayout({
   children,
