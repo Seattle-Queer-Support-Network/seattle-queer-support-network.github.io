@@ -1,6 +1,5 @@
 "use client";
-
-import EventForm from "@/app/ui/EventForm";
+import EventForm from "../../ui/EventForm";
 
 export default function Page() {
   return (

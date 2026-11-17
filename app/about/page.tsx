@@ -1,4 +1,3 @@
-"use client";
 import websiteData from "../ui/websiteData";
 
 export default function Page() {

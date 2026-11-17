@@ -1,5 +1,4 @@
 "use client";
-
 import GroupLeadForm from "@/app/ui/GroupLeadForm";
 
 export default function Page() {

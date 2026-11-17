@@ -1,5 +1,5 @@
 "use client";
-import GroupSuggestionForm from "@/app/ui/GroupSuggestionForm";
+import GroupSuggestionForm from "../../ui/GroupSuggestionForm";
 import websiteData from "../../ui/websiteData";
 
 export default function Page() {

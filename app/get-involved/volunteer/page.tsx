@@ -1,7 +1,5 @@
 "use client";
-
-import Form from "@/app/ui/ContactForm";
-import VolunteerForm from "@/app/ui/VolunteerForm";
+import VolunteerForm from "../../ui/VolunteerForm";
 
 export default function Page() {
   return (
@@ -27,13 +25,13 @@ export default function Page() {
           </p>
 
           {
-            // Commenting out Volunteer Match until it's ready
+            // Commenting out Idealist until it's ready
             /* <p className="text-center m-3">
             <a
               className="btn btn-custom p-8"
-              href="https://www.idealist.org/en/nonprofit/1b630a449bf042898e7781c8b74b682d-beloveds-animal-rescue-relief-foundation-seattle"
+              href="https://www.idealist.org/en/volunteer"
             >
-              View Current Roles on Volunteer Match
+              View Current Roles on Idealist
             </a>
           </p> */
           }
