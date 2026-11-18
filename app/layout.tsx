@@ -1,5 +1,5 @@
 import "./globals.css";
-import { JsonLd } from "./ui/JsonLD";
+import { JsonLd } from "./ui/JsonLd";
 import { Menu } from "./ui/Menu";
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
 
