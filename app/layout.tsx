@@ -11,7 +11,10 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <head>
+        <JsonLD data={websiteData.jsonLD} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
 
       <body className="min-w-sm max-w-xlg ">
         <Menu />
@@ -40,7 +43,6 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-      <JsonLD data={websiteData.jsonLD} />
     </html>
   );
 }
