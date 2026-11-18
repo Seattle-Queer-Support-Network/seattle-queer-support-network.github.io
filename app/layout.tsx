@@ -1,7 +1,8 @@
 import "./globals.css";
-import { JsonLd } from "./ui/JsonLd";
+import { JsonLD } from "./ui/JsonLD";
 import { Menu } from "./ui/Menu";
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
+import websiteData from "./ui/websiteData";
 
 export default function RootLayout({
   children,
@@ -39,7 +40,7 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-      <JsonLd data={siteJsonLd} />
+      <JsonLD data={websiteData.jsonLD} />
     </html>
   );
 }
