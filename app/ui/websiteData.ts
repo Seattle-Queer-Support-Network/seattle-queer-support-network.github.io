@@ -1,3 +1,4 @@
+import { Graph } from "schema-dts";
 
 export type Link ={
   
@@ -26,10 +27,11 @@ export type PageData ={
     title: string;
    path?: string
    subTitles?: Link[]
-   
 }
 
-const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[], adminData:adminData[]}= {
+const PROD_URL= "https://seattlequeersupport.org"
+
+const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[], adminData:adminData[], jsonLD: Graph}= {
   pages: [
     {
       title: "Home",
@@ -112,6 +114,25 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
 
   adminData :[{name: "Name",  image:"/images/example-staff-photo.jpg"},{name: "Name",image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"}],
   websiteTitle: "Seattle Queer Support Network",
+  jsonLD:{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${PROD_URL}/#organization`,
+      name: "Seattle Queer Support Network",
+      url: PROD_URL,
+      //logo: `${PROD_URL}/logo.png`,  TBD
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${PROD_URL}/#website`,
+      name: "Seattle Queer Support Network",
+      url: PROD_URL,
+     
+    },
+  ],
+}
 };
 
 export default websiteData;

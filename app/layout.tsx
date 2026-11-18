@@ -1,5 +1,5 @@
 import "./globals.css";
-import pageData from "./ui/websiteData";
+import { JsonLd } from "./ui/JsonLD";
 import { Menu } from "./ui/Menu";
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
 
@@ -39,6 +39,7 @@ export default function RootLayout({
           </div>
         </div>
       </body>
+      <JsonLd data={siteJsonLd} />
     </html>
   );
 }
