@@ -16,12 +16,14 @@
   --dark-purple:#331e38;
   --red:#ed254e;
   --base-font:  Helvetica, Arial, sans-serif;
-  --base-h1-size: 3.4em
+  --base-h1-size: 3em;
+        --base-moblie-h1-size: 2em;
 }
 
 [data-theme='OpenDyslexic'] {
     --base-font:  OpenDyslexic-Regular;
-      --base-h1-size: 2.4em
+      --base-h1-size: 2.3em;
+      --base-moblie-h1-size: 1.6em;
 
 }
 }
@@ -112,4 +114,10 @@ legend{
   flex-direction: row;
   justify-content: space-between;
 
+}
+
+@media (max-width: 500px) {
+  h1{
+    font-size: var(--base-moblie-h1-size);
+  }
 }
