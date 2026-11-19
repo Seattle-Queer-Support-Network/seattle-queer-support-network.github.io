@@ -1,4 +1,10 @@
 import websiteData from "../ui/websiteData";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Seattle Queer Support Network",
+  description: "",
+};
 
 export default function Page() {
   const adminData = websiteData.adminData;
@@ -96,7 +102,7 @@ export default function Page() {
                   src={admin.image}
                   className=" mb-3 object-scale-down max-w-3xs p-3 "
                 />
-                <h1 className="mb-3">{admin.name}</h1>
+                <p className="mb-3">{admin.name}</p>
               </div>
             );
           })}
