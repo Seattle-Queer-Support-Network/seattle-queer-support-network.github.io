@@ -55,12 +55,14 @@ export function MoblieMenuItems(props: { items: PageData[] }) {
           return (
             <div key={item.title} className="p-3 ">
               <details>
-                <summary>{item.title}</summary>
+                <summary className="base-font">{item.title}</summary>
                 <div className="ml-5 pt-3">
                   {item.subTitles.map((subtitle) => {
                     return (
                       <div key={subtitle.title} className=" p-3 purple-select">
-                        <a href={subtitle.path}>{subtitle.title}</a>
+                        <a className="base-font" href={subtitle.path}>
+                          {subtitle.title}
+                        </a>
                       </div>
                     );
                   })}
@@ -71,7 +73,9 @@ export function MoblieMenuItems(props: { items: PageData[] }) {
         } else {
           return (
             <div key={item.title} className="p-3 purple-select">
-              <a href={item.path}>{item.title}</a>
+              <a className="base-font" href={item.path}>
+                {item.title}
+              </a>
             </div>
           );
         }

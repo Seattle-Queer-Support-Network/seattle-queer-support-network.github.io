@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <h1 className="text-5xl text-center font-bold">Event Calender</h1>
 
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
       <p>
         This is a a place holder for the event calender. Will add one once we
         have a system to add input.

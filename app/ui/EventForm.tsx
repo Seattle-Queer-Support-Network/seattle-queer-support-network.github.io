@@ -5,7 +5,7 @@ export default function EventForm() {
     <BaseForm access_key={EVENT_ACCESS_KEY} formName={"Submit Event Form"}>
       <div>
         <legend className="fieldset-legend  flex flex-col items-center m-1">
-          Event Time
+          Event Time *
         </legend>
         <p className="p-2">Start Time</p>
         <input
@@ -27,7 +27,7 @@ export default function EventForm() {
 
       <div>
         <legend className="fieldset-legend  flex flex-col items-center m-1">
-          Event Location:
+          Event Location *
         </legend>
         <input
           type="text"
@@ -41,7 +41,7 @@ export default function EventForm() {
 
       <div>
         <legend className="fieldset-legend  flex flex-col items-center m-1">
-          Event Description
+          Event Description *
         </legend>
         <textarea
           className="textarea h-50 w-full lg:min-w-100 md:min-w-100"

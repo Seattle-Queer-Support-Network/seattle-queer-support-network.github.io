@@ -22,7 +22,7 @@ export default function Page() {
         </p>
       </div>
 
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
         {groupData.map((group, index) => {
@@ -53,7 +53,7 @@ export default function Page() {
           );
         })}
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
       <div className={"hero-content flex-col lg:flex-row"}>
         <div>
           <h1 className="text-5xl text-center font-bold">

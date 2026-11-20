@@ -2,7 +2,7 @@
 import websiteData from "./websiteData";
 import { MenuItems, MoblieMenuItems } from "./MenuItems";
 import React from "react";
-import { ThemeToggle } from "../ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Menu() {
   const [showMoblieBar, setShowMoblieBar] = React.useState(false);
@@ -55,7 +55,7 @@ export function Menu() {
         </div>
       </div>
       {showMoblieBar ? (
-        <div className=" xl:hidden ">
+        <div className=" xl:hidden mb-11">
           <div className=" m-2  text-xl">
             <MoblieMenuItems items={websiteData.pages} />
             <a className="btn m-3 btn-custom w-50" href="/donate">

@@ -33,7 +33,7 @@ export default function Page() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
 
       <div className={"flex flex-col lg:flex-row-reverse  items-center "}>
         <img
@@ -57,7 +57,7 @@ export default function Page() {
         </div>
       </div>
 
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
 
       <div className={"flex flex-col lg:flex-row items-center"}>
         <img
@@ -83,12 +83,12 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
 
       <div className="">
         <h1 className="text-5xl text-center font-bold m-3">Admins</h1>
 
-        <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-4 flex flex-col items-center">
+        <div className="grid lg:grid-cols-3  md:grid-cols-2  gap-4 sm:gap-1 flex flex-col items-center">
           {adminData.map((admin, index) => {
             return (
               <div

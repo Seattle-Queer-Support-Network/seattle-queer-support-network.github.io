@@ -3,7 +3,7 @@ import { JsonLD } from "./ui/JsonLD";
 import { Menu } from "./ui/Menu";
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
 import websiteData from "./ui/websiteData";
-import { Providers } from "./providers";
+import { Providers } from "./ui/providers";
 
 export default function RootLayout({
   children,
@@ -22,7 +22,7 @@ export default function RootLayout({
           <div className="grid">
             <div
               id="root"
-              className="hero-content flex-col justify-start justify-self-center min-h-screen lg:pl-10 lg:pr-10 pt-10 m-10"
+              className="hero-content flex-col justify-start justify-self-center min-h-screen "
             >
               {children}
             </div>

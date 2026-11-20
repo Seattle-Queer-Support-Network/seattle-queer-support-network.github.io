@@ -14,7 +14,7 @@ export function ThemeToggle() {
       </div>
       <ul
         tabIndex={-1}
-        className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+        className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm"
       >
         {themes.map((themeName) => {
           return (

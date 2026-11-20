@@ -30,7 +30,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
       <div className="flex">
         <p>give butter form will go here once Clare is given accesss</p>
       </div>

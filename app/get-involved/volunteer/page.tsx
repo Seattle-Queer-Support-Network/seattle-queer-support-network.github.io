@@ -42,7 +42,7 @@ export default function Page() {
           }
         </div>
       </div>
-      <hr className="border border-custom m-10 w-full" />
+      <hr className="border border-custom lg:m-5 w-full" />
 
       <div className={" hero-content  flex-col  justify-self-center"}>
         <h1 className="text-5xl text-center font-bold">Volunteer Form</h1>
