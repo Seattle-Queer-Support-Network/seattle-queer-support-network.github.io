@@ -10,14 +10,14 @@
 @layer base{
 
 :root {
-  --yellow: #d2a121;
-  --teal: #21d2a1ff;
-  --purple:#a121d2;
-  --dark-purple:#331e38;
-  --red:#ed254e;
+  --yellow: #d9bc23fc;
+  --teal: #00cccdff;
+  --purple:#b026ffff;
+  --dark-purple:#2d0c58ff;
+  --red:#ff0028ff;
   --base-font:  Helvetica, Arial, sans-serif;
   --base-h1-size: 3em;
-        --base-moblie-h1-size: 2em;
+    --base-moblie-h1-size: 2em;
 }
 
 [data-theme='OpenDyslexic'] {
@@ -89,14 +89,14 @@ form input{
  }
 
  h1 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--base-font);
   font-weight: bolder;
   line-height:1.5;
   letter-spacing: 1.3;
   font-size: var(--base-h1-size);
  }
 
-.teal{
+.purple{
   background-color: var(--purple);
   padding: 20px;
 }

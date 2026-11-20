@@ -27,7 +27,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-          <div className="footer">
+          <div className="footer base-font">
             <p> Website by Clare Mason</p>
             <div className="flex flex-row">
               <a className="icon" href="#">

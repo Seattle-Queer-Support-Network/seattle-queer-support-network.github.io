@@ -24,11 +24,11 @@ export default function Page() {
 
       <hr className="border border-custom lg:m-5 w-full" />
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4 ">
         {groupData.map((group, index) => {
           return (
             <div
-              className="hero-content flex-col rounded-lg teal"
+              className="hero-content flex-col rounded-lg purple"
               // adding index to avoid collisions
               key={group.title + index}
             >
@@ -39,14 +39,17 @@ export default function Page() {
                   src={group.icon}
                   className=" object-contain h-20  m-5 "
                 />
-                <h1 className="text-5xl ">{group.title}</h1>
-                <p>{group.description}</p>
-                <p className="font-medium ">
-                  {group.time} in {group.location}
-                </p>
-                <p className=" font-medium">
+                <h1 className="text-5xl  ">{group.title}</h1>
+                <p className="">{group.description}</p>
+                <hr className="border border-custom lg:m-5 w-full" />
+
+                <p className=" font-bold ">
                   {group.startDate} through {group.endDate}
                 </p>
+                <p className=" ">
+                  {group.time} in {group.location}
+                </p>
+
                 <p>To join contact Steve at {group.contact}</p>
               </div>
             </div>
