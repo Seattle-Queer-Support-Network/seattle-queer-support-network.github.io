@@ -1,4 +1,5 @@
 import GroupSuggestionForm from "../../ui/GroupSuggestionForm";
+import FeedbackForm from "../../ui/FeedbackForm";
 import websiteData from "../../ui/websiteData";
 import type { Metadata } from "next";
 
@@ -72,6 +73,24 @@ export default function Page() {
           </p>
           <div className={"hero-content  flex-col  justify-self-center"}>
             <GroupSuggestionForm />
+          </div>
+        </div>
+      </div>
+      <hr className="border border-custom lg:m-5 w-full" />
+      <div className={"hero-content flex-col lg:flex-row"}>
+        <div>
+          <h1 className="text-5xl text-center font-bold">
+            Have feedback about a current group?
+          </h1>
+
+          <p className="py-4 text-center lg:max-w-9/10 m-auto ">
+            Send us a message regarding an experience you had in group—positive,
+            negative, or neutral. If it was a negative experience, we will respond
+            with specific questions about it, so we recommend waiting until then
+            to go into specific detail.
+          </p>
+          <div className={"hero-content  flex-col  justify-self-center"}>
+            <FeedbackForm />
           </div>
         </div>
       </div>

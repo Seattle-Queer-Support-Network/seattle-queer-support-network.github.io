@@ -8,11 +8,11 @@ export const CONTACT_ACCESS_KEY = "3a4bdd6c-2be7-4580-b1ee-561d88e39121";
 export const EVENT_ACCESS_KEY = "3e18a8e4-fab5-47b7-b948-a5b0d016617f";
 export const GROUP_LEAD_ACCESS_KEY = "bd7d7d67-c445-487c-9c89-2620ac950102";
 export const VOLUNTEER_ACCESS_KEY = "6157c09a-933d-423b-9691-cdb629920ed3";
-export const GROUP_SUGGESTION_ACCESS_KEY =
-  "7744d445-d178-4a68-b002-661a831f4526";
+export const GROUP_SUGGESTION_ACCESS_KEY = "7744d445-d178-4a68-b002-661a831f4526";
+export const FEEDBACK_ACCESS_KEY = "fc02d2d1-75b3-46aa-ba7d-d74acc281bea";
 
 const SUCCESSFUL_RESPONSE_MESSAGE =
-  "Message successfuly sent! We'll get back to you as soon as possible.";
+  "Message successfuly sent! We'll get back to you in 3-5 business days.";
 
 const ERROR_RESPONSE_MESSAGE =
   "Message failed to send. Please try again later.";
