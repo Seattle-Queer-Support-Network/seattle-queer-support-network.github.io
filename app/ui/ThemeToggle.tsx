@@ -1,12 +1,19 @@
 import { useTheme } from "next-themes";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { IoMdSettings } from "react-icons/io";
 
 export function ThemeToggle() {
   const themes = ["default", "OpenDyslexic"];
   const { theme, setTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {}, [theme]);
+  useEffect(() => {
+    setIsMounted(true);
+  }, [theme]);
+
+  if (!isMounted) {
+    return null;
+  }
   return (
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn m-1">
