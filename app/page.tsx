@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BLOG_URL } from "./ui/websiteData";
 
 export const metadata: Metadata = {
   title: "The Seattle Queer Support Network",
@@ -112,10 +113,7 @@ export default function Home() {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div className="text-center">
-            <a
-              className="btn m-3 btn-custom center"
-              href="/programs/event-calander"
-            >
+            <a className="btn m-3 btn-custom center" href={BLOG_URL}>
               Read the Blog
             </a>
           </div>

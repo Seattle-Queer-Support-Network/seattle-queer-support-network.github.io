@@ -30,6 +30,7 @@ export type PageData ={
 }
 
 const PROD_URL= "https://seattlequeersupport.org"
+export const BLOG_URL = "https://seattlequeersupport.substack.com/"
 
 const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[], adminData:adminData[], jsonLD: Graph}= {
   pages: [
@@ -59,7 +60,7 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
     },
       {
       title: "Blog",
-      path:"https://substack.com/"
+      path:BLOG_URL
 
     },
   ],
