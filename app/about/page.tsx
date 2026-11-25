@@ -1,4 +1,4 @@
-import websiteData from "../ui/websiteData";
+import { adminData } from "../ui/websiteData";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +7,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const adminData = websiteData.adminData;
   return (
     <>
       <div>

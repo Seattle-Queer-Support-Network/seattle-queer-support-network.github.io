@@ -1,7 +1,7 @@
 import React from "react";
-import { PageData } from "./websiteData";
+import { MenuData } from "./websiteData";
 
-export function MenuItems(props: { items: PageData[] }) {
+export function MenuItems(props: { items: MenuData[] }) {
   const { items } = props;
 
   return (
@@ -46,7 +46,7 @@ export function MenuItems(props: { items: PageData[] }) {
   );
 }
 
-export function MoblieMenuItems(props: { items: PageData[] }) {
+export function MoblieMenuItems(props: { items: MenuData[] }) {
   const { items } = props;
   return (
     <>

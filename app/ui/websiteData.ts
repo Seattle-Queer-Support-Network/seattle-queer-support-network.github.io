@@ -6,7 +6,7 @@ export type Link ={
    path: string
 }
 
-export type groupData={
+export type GroupData={
   title: string;
   description: string;
   startDate: string;
@@ -17,12 +17,12 @@ export type groupData={
   contact: string
 }
 
-export type adminData={
+export type AdminData={
   name: string;
   image:string;
 }
 
-export type PageData ={
+export type MenuData ={
   
     title: string;
    path?: string
@@ -31,9 +31,9 @@ export type PageData ={
 
 const PROD_URL= "https://seattlequeersupport.org"
 export const BLOG_URL = "https://seattlequeersupport.substack.com/"
+export const WEBSITE_TITLE= "Queer Support Network"
 
-const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[], adminData:adminData[], jsonLD: Graph}= {
-  pages: [
+ export const menuData: MenuData[]=[ 
     {
       title: "Home",
       path:"/",
@@ -62,9 +62,10 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
       title: "Blog",
       path:BLOG_URL
 
-    },
-  ],
-  groupData:[
+    }]
+
+
+  export const  groupData: GroupData[]=[
     {title:"Group Title",
       description: "Group description goes here. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Group description goes here. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.",
      startDate: "October 5th, 2026",
@@ -110,12 +111,11 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
   contact: "steve@steve.com",
     icon: '/images/groupIcons/wlw.png'
 }
-    
-  ],
+]
 
-  adminData :[{name: "Name",  image:"/images/example-staff-photo.jpg"},{name: "Name",image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"}],
-  websiteTitle: "Seattle Queer Support Network",
-  jsonLD:{
+  export const adminData: AdminData[]= [{name: "Name",  image:"/images/example-staff-photo.jpg"},{name: "Name",image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"},{name: "Name", image:"/images/example-staff-photo.jpg"}]
+
+export const  jsonLD:Graph ={
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -134,6 +134,5 @@ const websiteData: {pages:PageData[], websiteTitle:string, groupData: groupData[
     },
   ],
 }
-};
 
-export default websiteData;
+

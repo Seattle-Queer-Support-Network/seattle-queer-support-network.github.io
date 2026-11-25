@@ -1,6 +1,6 @@
 import GroupSuggestionForm from "../../ui/GroupSuggestionForm";
 import FeedbackForm from "../../ui/FeedbackForm";
-import websiteData from "../../ui/websiteData";
+import { groupData } from "../../ui/websiteData";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const groupData = websiteData.groupData;
   return (
     <>
       <div>
@@ -85,9 +84,9 @@ export default function Page() {
 
           <p className="py-4 text-center lg:max-w-9/10 m-auto ">
             Send us a message regarding an experience you had in group—positive,
-            negative, or neutral. If it was a negative experience, we will respond
-            with specific questions about it, so we recommend waiting until then
-            to go into specific detail.
+            negative, or neutral. If it was a negative experience, we will
+            respond with specific questions about it, so we recommend waiting
+            until then to go into specific detail.
           </p>
           <div className={"hero-content  flex-col  justify-self-center"}>
             <FeedbackForm />

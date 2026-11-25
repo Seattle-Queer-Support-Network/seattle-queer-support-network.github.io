@@ -1,5 +1,5 @@
 "use client";
-import websiteData from "./websiteData";
+import { menuData } from "./websiteData";
 import { MenuItems, MoblieMenuItems } from "./MenuItems";
 import React from "react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -44,7 +44,7 @@ export function Menu() {
             popover={"auto"}
           >
             <span className="megamenu-active"></span>
-            <MenuItems items={websiteData.pages} />
+            <MenuItems items={menuData} />
           </div>
         </div>
         <div className=" max-xl:invisible navbar-end  ">
@@ -57,7 +57,7 @@ export function Menu() {
       {showMoblieBar ? (
         <div className=" xl:hidden mb-11">
           <div className=" m-2  text-xl">
-            <MoblieMenuItems items={websiteData.pages} />
+            <MoblieMenuItems items={menuData} />
             <a className="btn m-3 btn-custom w-50" href="/donate">
               Donate
             </a>

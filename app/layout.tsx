@@ -2,7 +2,7 @@ import "./globals.css";
 import { JsonLD } from "./ui/JsonLD";
 import { Menu } from "./ui/Menu";
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
-import websiteData from "./ui/websiteData";
+import { jsonLD } from "./ui/websiteData";
 import { Providers } from "./ui/providers";
 import UnderConstruction from "./ui/UnderConstruction";
 import { config } from "./config";
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head>
-        <JsonLD data={websiteData.jsonLD} />
+        <JsonLD data={jsonLD} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="min-w-sm max-w-xlg ">
