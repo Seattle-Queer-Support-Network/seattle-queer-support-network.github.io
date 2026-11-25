@@ -101,6 +101,10 @@ form input{
   padding: 20px;
 }
 
+.bg-dark-purple{
+  background-color: var(--dark-purple);
+}
+
 body{
  background: var(--dark-purple);
   font-family: var(--base-font);

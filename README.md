@@ -2,9 +2,17 @@
 
 ## How to run locally
 
-1. run `npm i` to install packages
-2. Run `npm run dev` to start the server on your `localhost:3000`
-3. Enjoy!
+1. Pull repo
+2. Add a `.env.local` with these contents
+
+```
+NEXT_PUBLIC_UNDER_CONSTRUCTION=false
+
+```
+
+3. run `npm i` to install packages
+4. Run `npm run dev` to start the server on your `localhost:3000`
+5. Enjoy!
 
 ## Acknowledgements
 
